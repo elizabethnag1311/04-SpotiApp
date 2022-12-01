@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-4 mt-2"> 
+    <div class="col" *ngFor="let item of items">
+      <div (click)="verArtista( item )" class="card text-bg-dark animated fadeIn puntero">
+        <img [src]="item.images | noimage" class="card-img-top" alt="{{item.name}}">
+        <div class="card-body">
+          <h5 class="card-title text-bg-dark">{{item.name}}</h5>
+            <p class="card-text"><span *ngFor="let artista of item.artists" class="badge text-bg-info">{{artista.name}}</span></p>
+            <p class="card-text"><span class="badge text-bg-dark">{{item.type}}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
