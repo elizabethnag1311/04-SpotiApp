@@ -16,6 +16,7 @@ import { HttpClientModule } from "@angular/common/http";
 
 //pipes
 import { NoimagePipe } from "./pipes/noimage.pipe";
+import { DomseguroPipe } from "./pipes/domseguro.pipe";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NoimagePipe } from "./pipes/noimage.pipe";
     NavbarComponent,
     TarjetasComponent,
     LoadingComponent,
-    NoimagePipe
+    NoimagePipe,
+    DomseguroPipe
     
   ],
   imports: [
